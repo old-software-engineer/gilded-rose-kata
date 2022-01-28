@@ -13,8 +13,8 @@ class BackstagePass extends Item {
   }
 
   updateItem() {
-    this.sellIn -= 1;
     this.quality = Math.min(50, this.checkQuality());
+    this.sellIn -= 1;
   }
 }
 

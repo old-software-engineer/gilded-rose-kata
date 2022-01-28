@@ -1,12 +1,12 @@
 const Item = require('./item');
 
 class SulfarasItem extends Item {
-  constructor(name = 'Sulfuras, Hand of Ragnaros') {
-    super(name, 0, 80);
+  constructor(name = 'Sulfuras, Hand of Ragnaros',sellIn,quantity) {
+    super(name,sellIn, 80);
   }
 
   updateItem() {
-    this.sellIn -= 1;
+    this.sellIn=this.sellIn;
   }
 }
 

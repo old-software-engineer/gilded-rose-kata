@@ -7,8 +7,8 @@ class AgedBrie extends Item {
   }
 
   updateItem() {
+    this.quality = Math.min(50, (this.sellIn > 0 ? this.quality + 1:this.quality + 2 ));
     this.sellIn -= 1;
-    this.quality = Math.min(50, (this.sellIn > 0 ? this.quality + 1 : this.quality + 2));
   }
 }
 
